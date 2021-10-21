@@ -3,7 +3,7 @@ let array = [];
 let name = [];
 
 function getUsers() {
-    fetch(`http://jsonplaceholder.typicode.com/users`)
+    fetch(`https://jsonplaceholder.typicode.com/users`)
         .then(response => response.json())
         .then(data => {
             for (let i = 0; i < data.length; i++) {
