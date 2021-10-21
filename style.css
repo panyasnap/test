@@ -1,0 +1,42 @@
+.logo {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(
+            -30deg, #fa9f00, #fce700);
+    z-index: 4;
+    border-radius: 20px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3); /* Параметры тени */
+}
+
+.logo:before {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background: linear-gradient(to right, #f4f2eb 50%, #262522 50%);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+}
+
+span {
+    background:linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+            linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 0, 1));
+    background-size: 0% 0.1em, 0 0.1em;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+    cursor: pointer;
+}
+
+span:hover,
+span:focus {
+    background-size: 0 0.1em, 100% 0.1em;
+}
+li{
+    list-style: auto;
+}
